@@ -15,5 +15,5 @@ mkdir -p ~/repos/$APP_NAME
 cd ~/repos/$APP_NAME
 
 # Call your existing setup script
-bash ./setup.sh "$APP_NAME"
+bash ~/repos/matias-dev-template/setup.sh "$APP_NAME"
 

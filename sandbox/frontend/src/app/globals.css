@@ -1,14 +1,5 @@
-/* @import "tailwindcss"; */
-/* @import "tw-animate-css"; */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
+@import "tailwindcss";
 @import "tw-animate-css";
-
-/* @import "./styles/prism.css"; */
 
 @custom-variant dark (&:is(.dark *));
 
@@ -123,7 +114,9 @@
 
 @layer base {
   * {
-    box-sizing: border-box;
-    outline: 1px solid #d1d5db; /* gray-300 */
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }

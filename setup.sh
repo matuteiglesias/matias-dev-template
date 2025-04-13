@@ -39,6 +39,8 @@ npm install -D @tailwindcss/forms tailwind-variants
 # 🧠 Initialize shadcn/ui (optional but powerful)
 npx shadcn@latest init || echo "ShadCN init skipped or failed"
 
+npm install @radix-ui/react-slot class-variance-authority clsx lucide-react
+
 cd "$REPO_DIR"
 
 ########################
@@ -107,10 +109,8 @@ mkdir -p "$FRONTEND_DIR"/src/components/ui
 cp sandbox/frontend/src/components/ui/* "$FRONTEND_DIR"/src/components/ui/
 
 # Overwrite only if custom one exists
-if [ -f sandbox/frontend/package.json ]; then
-  cp sandbox/frontend/package.json "$FRONTEND_DIR"/package.json
-  (cd "$FRONTEND_DIR" && npm install)
-fi
+cp sandbox/frontend/package.json "$FRONTEND_DIR"/package.json
+(cd "$FRONTEND_DIR" && npm install)
 
 echo "✅ Setup complete!"
 echo "👉 Now add your custom files or let me know to copy your own versions into:"
