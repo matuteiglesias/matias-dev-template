@@ -15,5 +15,5 @@ mkdir -p ~/repos/$APP_NAME
 cd ~/repos/$APP_NAME
 
 # Call your existing setup script
-bash ~/repos/ask-docs/setup_fullstack.sh "$APP_NAME"
+bash ./setup.sh "$APP_NAME"
 
