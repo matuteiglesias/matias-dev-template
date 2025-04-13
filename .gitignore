@@ -1,0 +1,14 @@
+# Node
+node_modules/
+.next/
+frontend.log
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+backend.log
+
+# OS files
+.DS_Store
