@@ -12,3 +12,4 @@ backend.log
 
 # OS files
 .DS_Store
+.env
